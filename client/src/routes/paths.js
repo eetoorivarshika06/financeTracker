@@ -5,6 +5,7 @@ export const ROUTES = {
   TRANSACTIONS: "/transactions",
   BUDGET: "/budget",
   INSIGHTS: "/insights",
+  CHAT: "/chat",
   REPORTS: "/reports",
   PROFILE: "/profile",
 };
@@ -16,6 +17,7 @@ export const PROTECTED_ROUTES = [
   ROUTES.TRANSACTIONS,
   ROUTES.BUDGET,
   ROUTES.INSIGHTS,
+  ROUTES.CHAT,
   ROUTES.REPORTS,
   ROUTES.PROFILE,
 ];

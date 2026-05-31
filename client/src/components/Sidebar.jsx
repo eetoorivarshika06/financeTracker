@@ -5,6 +5,7 @@ import {
   ArrowLeftRight,
   Target,
   Sparkles,
+  MessageCircle,
   FileText,
   User,
   X,
@@ -18,6 +19,7 @@ const links = [
   { to: ROUTES.TRANSACTIONS, label: "Transactions", icon: ArrowLeftRight },
   { to: ROUTES.BUDGET, label: "Budget", icon: Target },
   { to: ROUTES.INSIGHTS, label: "AI Insights", icon: Sparkles },
+  { to: ROUTES.CHAT, label: "Assistant", icon: MessageCircle },
   { to: ROUTES.REPORTS, label: "Reports", icon: FileText },
   { to: ROUTES.PROFILE, label: "Profile", icon: User },
 ];

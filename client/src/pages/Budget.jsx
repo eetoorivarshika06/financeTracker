@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import { fetchBudget, saveBudget, clearBudgetStatus } from "../redux/budgetSlice";
-import { fetchDashboard } from "../redux/insightSlice";
 import { formatCurrency } from "../utils/formatCurrency";
 import PageHeader from "../components/ui/PageHeader";
 import Card from "../components/ui/Card";
@@ -21,12 +20,6 @@ function Budget() {
   useEffect(() => {
     dispatch(fetchBudget());
   }, [dispatch]);
-
-  useEffect(() => {
-    if (data?.monthlyBudget != null) {
-      setMonthlyBudget(String(data.monthlyBudget));
-    }
-  }, [data]);
 
   useEffect(() => {
     if (success) {
@@ -74,7 +67,7 @@ function Budget() {
             type="number"
             className="finance-input mb-4"
             placeholder="Enter amount (₹)"
-            value={monthlyBudget}
+            value={monthlyBudget || data?.monthlyBudget || ""}
             onChange={(e) => setMonthlyBudget(e.target.value)}
           />
           <Button

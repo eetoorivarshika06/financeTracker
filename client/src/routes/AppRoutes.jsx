@@ -10,6 +10,7 @@ import Dashboard from "../pages/Dashboard";
 import Transactions from "../pages/Transactions";
 import Budget from "../pages/Budget";
 import Insights from "../pages/Insights";
+import Chat from "../pages/Chat";
 import Reports from "../pages/Reports";
 import Profile from "../pages/Profile";
 
@@ -29,6 +30,7 @@ function AppRoutes() {
           <Route path={ROUTES.TRANSACTIONS} element={<Transactions />} />
           <Route path={ROUTES.BUDGET} element={<Budget />} />
           <Route path={ROUTES.INSIGHTS} element={<Insights />} />
+          <Route path={ROUTES.CHAT} element={<Chat />} />
           <Route path={ROUTES.REPORTS} element={<Reports />} />
           <Route path={ROUTES.PROFILE} element={<Profile />} />
         </Route>
